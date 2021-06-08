@@ -58,6 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoutineItemCreate.cs" />
+    <Compile Include="RoutineItemDetail.cs" />
+    <Compile Include="RoutineItemEdit.cs" />
+    <Compile Include="RoutineItemListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
