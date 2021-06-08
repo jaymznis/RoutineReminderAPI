@@ -33,7 +33,12 @@ namespace RoutineReminder.Data
         {
             return new ApplicationDbContext();
         }
+
+
+        public DbSet<Routine> Routines { get; set; }
+
         public DbSet<RoutineItem> RoutineItems { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
