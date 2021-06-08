@@ -58,10 +58,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoutineItemService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoutineReminder.Data\RoutineReminder.Data.csproj">
+      <Project>{04228D60-3D30-4145-BC0A-4389F0990929}</Project>
+      <Name>RoutineReminder.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutineReminder.Models\RoutineReminder.Models.csproj">
+      <Project>{497D4113-2B74-4359-B9C9-3535C4349685}</Project>
+      <Name>RoutineReminder.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
