@@ -62,6 +62,10 @@
     <Compile Include="RoutineDetail.cs" />
     <Compile Include="RoutineEdit.cs" />
     <Compile Include="RoutineListItem.cs" />
+    <Compile Include="RoutineItemCreate.cs" />
+    <Compile Include="RoutineItemDetail.cs" />
+    <Compile Include="RoutineItemEdit.cs" />
+    <Compile Include="RoutineItemListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
