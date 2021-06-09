@@ -61,9 +61,6 @@
     <Compile Include="RoutineCreate.cs" />
     <Compile Include="RoutineDetail.cs" />
     <Compile Include="RoutineEdit.cs" />
-    <Compile Include="RoutineItemReminderJoinCreate.cs" />
-    <Compile Include="RoutineItemReminderJoinDetail.cs" />
-    <Compile Include="RoutineItemReminderJoinListItem.cs" />
     <Compile Include="RoutineListItem.cs" />
     <Compile Include="RoutineItemCreate.cs" />
     <Compile Include="RoutineItemDetail.cs" />

@@ -36,6 +36,8 @@ namespace RoutineReminder.Data
 
 
         public DbSet<Routine> Routines { get; set; }
+      
+        public DbSet<RoutineReminderJoin> RRJoin { get; set; }
 
         public DbSet<RoutineItem> RoutineItems { get; set; }
 
