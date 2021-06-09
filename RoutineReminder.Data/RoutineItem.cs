@@ -24,7 +24,7 @@ namespace RoutineReminder.Data
 
         public TimeSpan RoutineItemTimeframe { get; set; }
 
-        public virtual List<Reminder> Reminders { get; set; }
-
+        public virtual List<Routine_RoutineItem> Routines { get; set; }
+     
     }
 }
