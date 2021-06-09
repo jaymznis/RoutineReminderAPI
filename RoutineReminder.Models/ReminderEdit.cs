@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Models
 {
-    class ReminderEdit
+    public class ReminderEdit
     {
         public int ReminderId { get; set; }
         [Required]

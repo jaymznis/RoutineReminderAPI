@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Models
 {
-    class ReminderDetail
+    public class ReminderDetail
     {
         public int ReminderId { get; set; }
         public string ReminderName { get; set; }
         public string ReminderDesc { get; set; }
         public DateTime ReminderTime { get; set; }
-        public virtual List<RoutineItem> RoutineItems { get; set; }
+        public virtual List<Routine> Routines { get; set; }
     }
 }

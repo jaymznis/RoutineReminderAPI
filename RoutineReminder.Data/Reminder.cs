@@ -13,18 +13,14 @@ namespace RoutineReminder.Data
         [Key]
         public int ReminderId { get; set; }
 
-        [ForeignKey(nameof(Routine))]
-        public int? RoutineId { get; set; }
-        public virtual Routine Routine { get; set; }
-
-        [System.ComponentModel.DataAnnotations.Required]
+        [Required]
         public string ReminderName { get; set; }
 
         public string ReminderDesc { get; set; }
 
         public DateTime ReminderTime { get; set; }
 
-        public virtual List<Reminder> Reminders { get; set; }
+        public virtual List<Routine> Routines { get; set; }
 
     }
 }
