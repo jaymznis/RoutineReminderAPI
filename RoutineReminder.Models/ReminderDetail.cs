@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoutineReminder.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,6 @@ namespace RoutineReminder.Models
         public string ReminderName { get; set; }
         public string ReminderDesc { get; set; }
         public DateTime ReminderTime { get; set; }
-        public virtual List<RoutineItemListItem> RoutineItems { get; set; }
+        public virtual List<RoutineItem> RoutineItems { get; set; }
     }
 }

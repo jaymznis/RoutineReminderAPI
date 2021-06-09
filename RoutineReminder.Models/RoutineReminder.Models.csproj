@@ -75,6 +75,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoutineReminder.Data\RoutineReminder.Data.csproj">
+      <Project>{04228D60-3D30-4145-BC0A-4389F0990929}</Project>
+      <Name>RoutineReminder.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
