@@ -29,8 +29,8 @@ namespace RoutineReminder.Data
                 return timeframe;
             }
         }
-        public virtual List<RoutineItem> RoutineItems{ get; set; }
-        public virtual List<RoutineReminder> RoutineReminders { get; set; }
+        public virtual List<Routine_RoutineItem> RoutineItems { get; set; } = new List<Routine_RoutineItem>();
+        public virtual List<RoutineReminderJoin> Reminders { get; set; } = new List<RoutineReminderJoin>();
 
     }
 }

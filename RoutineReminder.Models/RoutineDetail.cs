@@ -22,6 +22,6 @@ namespace RoutineReminder.Models
             }
         }
         public virtual List<RoutineItemListItem> RoutineItems { get; set; }
-        public virtual List<RoutineReminderListItem> RoutineReminders { get; set; }
+        public virtual List<ReminderListItem> Reminders { get; set; }
     }
 }

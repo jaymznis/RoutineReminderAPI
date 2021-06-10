@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Service
 {
-   public class RoutineItemService
+    public class RoutineItemService
     {
         public bool CreateRoutineItem(RoutineItemCreate model)
         {
@@ -17,8 +17,7 @@ namespace RoutineReminder.Service
                 {
                     RoutineItemName = model.RoutineItemName,
                     RoutineItemDescription = model.RoutineItemDescription,
-                   RoutineId = model.RoutineId,
-                   RoutineItemTimeframe = model.RoutineItemTimeframe
+                    RoutineItemTimeframe = model.RoutineItemTimeframe
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -38,10 +37,10 @@ namespace RoutineReminder.Service
                         e =>
                         new RoutineItemListItem
                         {
-                           RoutineItemId = e.RoutineItemId,
-                           RoutineId = e.RoutineId,
-                           RoutineItemName = e.RoutineItemName,
-                           RoutineItemTimeframe = e.RoutineItemTimeframe
+                            RoutineItemId = e.RoutineItemId,
+                            RoutineItemName = e.RoutineItemName,
+                            RoutineItemTimeframe = e.RoutineItemTimeframe,
+                           
                         }
                         );
                 return query.ToArray();
@@ -55,15 +54,14 @@ namespace RoutineReminder.Service
                 var entity =
                     ctx
                     .RoutineItems
-                    .Single(e => e.RoutineId == id);
+                    .Single(e => e.RoutineItemId == id);
                 return
                     new RoutineItemDetail
                     {
                         RoutineItemId = entity.RoutineItemId,
                         RoutineItemName = entity.RoutineItemName,
                         RoutineItemDescription = entity.RoutineItemDescription,
-                        RoutineItemTimeframe = entity.RoutineItemTimeframe,
-                        Routine = new RoutineListItem() { RoutineId = entity.Routine.RoutineId, Name = entity.Routine.RoutineName }
+                        RoutineItemTimeframe = entity.RoutineItemTimeframe
                     };
             }
         }
@@ -80,7 +78,6 @@ namespace RoutineReminder.Service
                 entity.RoutineItemName = model.RoutineItemName;
                 entity.RoutineItemDescription = model.RoutineItemDescription;
                 entity.RoutineItemTimeframe = model.RoutineItemTimeframe;
-                entity.RoutineId = model.RoutineId;
 
                 return ctx.SaveChanges() == 1;
             }

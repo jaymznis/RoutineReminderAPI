@@ -13,10 +13,6 @@ namespace RoutineReminder.Data
         [Key]
         public int RoutineItemId { get; set; }
 
-        [ForeignKey(nameof(Routine))]
-        public int? RoutineId { get; set; }
-        public virtual Routine Routine { get; set; }
-
         [Required]
         public string RoutineItemName { get; set; }
 
@@ -24,7 +20,7 @@ namespace RoutineReminder.Data
 
         public TimeSpan RoutineItemTimeframe { get; set; }
 
-        public virtual List<Reminder> Reminders { get; set; }
-
+        public virtual List<Routine_RoutineItem> Routines { get; set; }
+     
     }
 }

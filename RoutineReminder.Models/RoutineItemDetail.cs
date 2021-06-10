@@ -16,6 +16,6 @@ namespace RoutineReminder.Models
 
         public TimeSpan RoutineItemTimeframe { get; set; }
 
-        public virtual List<Reminder> Reminders { get; set; }
+        public virtual List<RoutineListItem> Routines { get; set; }
     }
 }

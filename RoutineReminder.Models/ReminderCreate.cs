@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Models
 {
-    public class RoutineItemCreate
+    public class ReminderCreate
     {
         [Required]
         [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]
         [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
-        public string RoutineItemName { get; set; }
-
-        [MaxLength(1200)]
-        public string RoutineItemDescription { get; set; }
-
-        public TimeSpan RoutineItemTimeframe { get; set; }
+        public string ReminderName { get; set; }
+        [Required]
+        [MaxLength(2000)]
+        public string ReminderDesc { get; set; }
+        [Required]
+        public DateTime ReminderTime { get; set; }
 
     }
 }
