@@ -61,6 +61,7 @@
     <Compile Include="RoutineReminderJoinService.cs" />
     <Compile Include="RoutineService.cs" />
     <Compile Include="RoutineItemService.cs" />
+    <Compile Include="R_RIService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
