@@ -17,8 +17,6 @@ namespace RoutineReminder.Models
         [MaxLength(1200)]
         public string RoutineItemDescription { get; set; }
 
-        public int? RoutineId { get; set; }
-
         public TimeSpan RoutineItemTimeframe { get; set; }
 
     }

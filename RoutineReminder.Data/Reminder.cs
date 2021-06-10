@@ -20,7 +20,7 @@ namespace RoutineReminder.Data
 
         public DateTime ReminderTime { get; set; }
 
-        public virtual List<Routine> Routines { get; set; }
+        public virtual List<RoutineReminderJoin> Routines { get; set; }
 
     }
 }

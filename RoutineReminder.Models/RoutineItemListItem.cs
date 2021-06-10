@@ -10,8 +10,6 @@ namespace RoutineReminder.Models
     {
         public int RoutineItemId { get; set; }
 
-        public int? RoutineId { get; set; }
-
         public string RoutineItemName { get; set; }
 
         public TimeSpan RoutineItemTimeframe { get; set; }

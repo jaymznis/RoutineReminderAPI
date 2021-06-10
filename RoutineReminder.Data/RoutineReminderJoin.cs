@@ -19,7 +19,7 @@ namespace RoutineReminder.Data
         public virtual Routine Routine { get; set; }
 
 
-        [ForeignKey("Reminder")]
+        [ForeignKey(nameof(Reminder))]
         public int ReminderId { get; set; }
         public virtual Reminder Reminder { get; set; }
     }
