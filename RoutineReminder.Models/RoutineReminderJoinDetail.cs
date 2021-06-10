@@ -10,8 +10,8 @@ namespace RoutineReminder.Models
     {
         public int RoutineReminderJoinId { get; set; }
         public int RoutineId { get; set; }
-        public string RoutineName { get; set; }
+        public RoutineListItem Routine { get; set; }
         public int ReminderId { get; set; }
-        public string ReminderName { get; set; }
+        public ReminderListItem Reminder { get; set; }
     }
 }

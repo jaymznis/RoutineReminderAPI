@@ -44,66 +44,66 @@ namespace RoutineReminder.Service
                                     RoutineName = e.Routine.RoutineName
                                 },
                                 ReminderId = e.ReminderId,
-                                Reminder = new Models.Cohort.CohortListItem
+                                Reminder = new ReminderListItem
                                 {
-                                    Name = e.Cohort.Name,
-                                    Id = e.Cohort.Id
+                                    ReminderId = e.ReminderId,
+                                    ReminderName = e.Reminder.ReminderName
                                 }
 
                             });
                 return query.ToArray();
             }
         }
-        public EnrollmentDetail GetEnrollmentById(int id)
+        public RoutineReminderJoinDetail GetRRJoinById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity = ctx
-                    .Enrollments
-                    .Single(e => e.Id == id);
+                    .RRJoin
+                    .Single(e => e.RoutineReminderJoinId == id);
                 return
-                    new EnrollmentDetail
+                    new RoutineReminderJoinDetail
                     {
-                        Id = entity.Id,
-                        StudentId = entity.StudentId,
-                        Student = new StudentListItem
+                        RoutineReminderJoinId = entity.RoutineReminderJoinId,
+                        RoutineId = entity.RoutineId,
+                        Routine = new RoutineListItem
                         {
-                            Name = entity.Student.FullName(),
-                            Id = entity.Student.Id
+                            RoutineId = entity.RoutineId,
+                            RoutineName = entity.Routine.RoutineName
                         },
-                        CohortId = entity.CohortId,
-                        Cohort = new Models.Cohort.CohortListItem
+                        ReminderId = entity.ReminderId,
+                        Reminder = new ReminderListItem
                         {
-                            Name = entity.Cohort.Name,
-                            Id = entity.Cohort.Id
+                            ReminderId = entity.ReminderId,
+                            ReminderName = entity.Reminder.ReminderName
                         }
                     };
             }
         }
-        public bool UpdateEnrollment(EnrollmentDetail model)
+        public bool UpdateRoutineReminderJoin(RoutineReminderJoinDetail model)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity = ctx
-                    .Enrollments
-                    .Single(e => e.Id == model.Id);
+                    .RRJoin
+                    .Single(e => e.RoutineReminderJoinId== model.RoutineReminderJoinId);
 
-                entity.CohortId = model.CohortId;
-                entity.StudentId = model.StudentId;
+                entity.RoutineId= model.RoutineId;
+                entity.ReminderId = model.ReminderId;
 
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public bool DeleteEnrollment(int enrollmentId)
+        public bool DeleteRoutineReminderJoin(int rrjId)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Enrollments
-                    .Single(e => e.Id == enrollmentId);
-                ctx.Enrollments.Remove(entity);
+                    .RRJoin
+                    .Single(e => e.RoutineReminderJoinId == rrjId);
+                ctx.RRJoin.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
