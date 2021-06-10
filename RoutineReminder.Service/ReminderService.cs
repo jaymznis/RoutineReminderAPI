@@ -64,11 +64,11 @@ namespace RoutineReminder.Service
                         ReminderName = entity.ReminderName,
                         ReminderDesc = entity.ReminderDesc,
                         ReminderTime = entity.ReminderTime,
-                        Routines = entity.RoutineItemReminderJoin
+                        Routines = entity.Routines
                         .Select(x => new RoutineListItem()
                         {
                             RoutineId = x.RoutineId,
-                            RoutineName = x.RoutineName
+                            RoutineName = x.Routine.RoutineName
                         }
                         ).ToList()
                         

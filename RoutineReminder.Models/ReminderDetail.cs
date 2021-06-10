@@ -13,6 +13,6 @@ namespace RoutineReminder.Models
         public string ReminderName { get; set; }
         public string ReminderDesc { get; set; }
         public DateTime ReminderTime { get; set; }
-        public virtual List<Routine> Routines { get; set; }
+        public virtual List<RoutineListItem> Routines { get; set; }
     }
 }
