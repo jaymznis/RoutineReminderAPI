@@ -71,7 +71,7 @@ namespace RoutineReminder.Service
                         StartTime = entity.StartTime,
                         EndTime = entity.EndTime,
                         RoutineItems = entity.RoutineItems
-                        .select(e => new RoutineItemListItem()
+                        .Select(e => new RoutineItemListItem()
                         {RoutineItemId = e.RoutineItemId,
                         RoutineId = e.RoutineId,
                         RoutineItemName = e.RoutineItemName,
