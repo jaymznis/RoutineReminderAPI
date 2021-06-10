@@ -30,7 +30,7 @@ namespace RoutineReminder.Data
             }
         }
         public virtual List<RoutineItem> RoutineItems{ get; set; }
-        public virtual List<RoutineReminder> RoutineReminders { get; set; }
+        public virtual List<Reminder> Reminders { get; set; }
 
     }
 }

@@ -94,8 +94,11 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reminder.cs" />
     <Compile Include="Routine.cs" />
     <Compile Include="RoutineItem.cs" />
+    <Compile Include="RoutineItemReminderJoin.cs" />
+    <Compile Include="RoutineReminderJoin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

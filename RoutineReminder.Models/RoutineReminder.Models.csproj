@@ -70,6 +70,9 @@
     <Compile Include="RoutineItemDetail.cs" />
     <Compile Include="RoutineItemEdit.cs" />
     <Compile Include="RoutineItemListItem.cs" />
+    <Compile Include="RoutineReminderJoinCreate.cs" />
+    <Compile Include="RoutineReminderJoinDetail.cs" />
+    <Compile Include="RoutineReminderJoinListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

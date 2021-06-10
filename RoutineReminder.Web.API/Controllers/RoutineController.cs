@@ -17,8 +17,8 @@ namespace RoutineReminder.Web.API.Controllers
         private RoutineService CreateRoutineService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var noteService = new RoutineService(userId);
-            return noteService;
+            var routineService = new RoutineService(userId);
+            return routineService;
         }
         [HttpGet]
         public IHttpActionResult GetAll()
@@ -55,3 +55,4 @@ namespace RoutineReminder.Web.API.Controllers
                 return InternalServerError(); return Ok();
         }
     }
+}
