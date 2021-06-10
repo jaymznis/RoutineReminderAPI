@@ -73,6 +73,9 @@
     <Compile Include="RoutineReminderJoinCreate.cs" />
     <Compile Include="RoutineReminderJoinDetail.cs" />
     <Compile Include="RoutineReminderJoinListItem.cs" />
+    <Compile Include="R_RICreate.cs" />
+    <Compile Include="R_RIDetail.cs" />
+    <Compile Include="R_RIListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

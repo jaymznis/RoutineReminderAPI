@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoutineReminder.Data
+namespace RoutineReminder.Models
 {
-    public class RoutineItemReminderJoin
+    public class R_RICreate
     {
-        [Key]
-        public int RoutineItemReminderJoinId { get; set; }
+        [Required]
+        public int RoutineId { get; set; }
+        [Required]
         public int RoutineItemId { get; set; }
-        public int ReminderId { get; set; }
     }
 }

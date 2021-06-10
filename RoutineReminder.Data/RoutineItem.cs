@@ -13,10 +13,6 @@ namespace RoutineReminder.Data
         [Key]
         public int RoutineItemId { get; set; }
 
-        [ForeignKey(nameof(Routine))]
-        public int? RoutineId { get; set; }
-        public virtual Routine Routine { get; set; }
-
         [Required]
         public string RoutineItemName { get; set; }
 

@@ -97,8 +97,8 @@
     <Compile Include="Reminder.cs" />
     <Compile Include="Routine.cs" />
     <Compile Include="RoutineItem.cs" />
-    <Compile Include="RoutineItemReminderJoin.cs" />
     <Compile Include="RoutineReminderJoin.cs" />
+    <Compile Include="Routine_RoutineItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
