@@ -85,7 +85,7 @@ namespace RoutineReminder.Service
             }
         }
 
-        public bool DeleteRoutineReminderJoin(int rriId)
+        public bool DeleteR_RI(int rriId)
         {
             using (var ctx = new ApplicationDbContext())
             {

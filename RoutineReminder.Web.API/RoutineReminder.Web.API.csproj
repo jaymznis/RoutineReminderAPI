@@ -204,6 +204,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoutineController.cs" />
     <Compile Include="Controllers\RoutineItemController.cs" />
+    <Compile Include="Controllers\Routine_RoutineItemController.cs" />
     <Compile Include="Controllers\RRJoinController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
