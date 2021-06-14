@@ -8,16 +8,19 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Data
 {
-    public class ShoppingList
+    public class ShoppingItem
     {
         [Key]
+        public int ShoppingItemId { get; set; }
+
+        [ForeignKey(nameof(ShoppingListId))]
+        public virtual ShoppingList ShoppingList { get; set; }
         public int ShoppingListId { get; set; }
 
         [Required]
-        public string ShoppingListName { get; set; }
+        public string ShoppingItemName { get; set; }
 
-        public string ShoppingListDesc { get; set; }
+        public string ShoppingItemDesc { get; set; }
 
-        public virtual List<ShoppingItem> ShoppingListItems { get; set; }
     }
 }

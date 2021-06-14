@@ -10,8 +10,8 @@ namespace RoutineReminder.Models
     public class ShoppingListCreate
     {
         [Required]
-        public string Title { get; set; }
+        public string ShoppingListName { get; set; }
 
-        public List<string> Items { get; set; }
+        public string ShoppingListDesc { get; set; }
     }
 }

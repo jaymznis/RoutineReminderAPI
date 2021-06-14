@@ -16,12 +16,12 @@ namespace RoutineReminder.Service
             _userId = userId;
         }
 
-        public bool CreatePost(ShoppingListCreate model)
+        public bool CreateShoppingList(ShoppingListCreate model)
         {
             var entity = new ShoppingList()
             {
-                ShoppingListName = model.Title,
-                ShoppingListItem = model.Items
+                ShoppingListName = model.ShoppingListName,
+                ShoppingListDesc = model.ShoppingListDesc
             };
 
             using (var ctx = new ApplicationDbContext())
