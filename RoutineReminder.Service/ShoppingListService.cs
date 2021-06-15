@@ -87,6 +87,7 @@ namespace RoutineReminder.Service
                 entity.ShoppingListId = model.ShoppingListId;
                 entity.ShoppingListName = model.ShoppingListName;
                 entity.ShoppingListDesc = model.ShoppingListDesc;
+
                 return ctx.SaveChanges() == 1;
             }
         }

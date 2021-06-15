@@ -79,6 +79,7 @@
     <Compile Include="ShoppingItemListItem.cs" />
     <Compile Include="ShoppingListCreate.cs" />
     <Compile Include="ShoppingListDetail.cs" />
+    <Compile Include="ShoppingListEdit.cs" />
     <Compile Include="ShoppingListItem.cs" />
   </ItemGroup>
   <ItemGroup>
