@@ -20,5 +20,7 @@ namespace RoutineReminder.Data
 
         public virtual List<ShoppingList_ShoppingItem> ShoppingItems { get; set; }
 
+        public virtual List<Routine_ShoppingList> Routines { get; set; }
+
     }
 }

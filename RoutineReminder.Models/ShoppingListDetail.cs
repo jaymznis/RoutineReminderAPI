@@ -13,5 +13,6 @@ namespace RoutineReminder.Models
         public string ShoppingListName { get; set; }
         public string ShoppingListDesc { get; set; }
         public virtual List<ShoppingItemListItem> ShoppingItems { get; set; }
+        public virtual List<RoutineListItem> Routines { get; set; }
     }
 }
