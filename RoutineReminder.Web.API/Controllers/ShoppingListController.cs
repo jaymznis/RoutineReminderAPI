@@ -39,5 +39,35 @@ namespace RoutineReminder.Web.API.Controllers
             
             return Ok();
         }
+
+        public IHttpActionResult GetByID(int id)
+        {
+            ShoppingListService shoppingListService = CreateShoppingListService();
+            var shoppingList = shoppingListService.GetShoppingListById(id);
+            return Ok(shoppingList);
+        }
+
+        public IHttpActionResult Put(ShoppingListEdit shoppingList)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState); 
+            
+            var service = CreateShoppingListService(); 
+            
+            if (!service.UpdateShoppingList(shoppingList))
+                return InternalServerError(); 
+            
+            return Ok();
+        }
+
+        public IHttpActionResult DeleteByID(int id)
+        {
+            var service = CreateShoppingListService(); 
+            
+            if (!service.DeleteShoppingList(id))
+                return InternalServerError(); 
+            
+            return Ok();
+        }
     }
 }
