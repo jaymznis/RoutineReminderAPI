@@ -119,6 +119,7 @@
     <Compile Include="RoutineItem.cs" />
     <Compile Include="RoutineReminderJoin.cs" />
     <Compile Include="Routine_RoutineItem.cs" />
+    <Compile Include="Routine_ShoppingList.cs" />
     <Compile Include="ShoppingList.cs" />
     <Compile Include="ShoppingItem.cs" />
     <Compile Include="ShoppingList_ShoppingItem.cs" />

@@ -70,6 +70,13 @@ namespace RoutineReminder.Service
                             ShoppingItemDesc = x.ShoppingItemDesc,
                             StoreLocation = x.StoreLocation
                         }
+                        ).ToList(),
+                        Routines = entity.Routines
+                        .Select(y => new RoutineListItem()
+                        {
+                            RoutineId = y.Routine.RoutineId,
+                            RoutineName = y.Routine.RoutineName
+                        }
                         ).ToList()
                     };
             }

@@ -42,6 +42,8 @@ namespace RoutineReminder.Data
         public DbSet<Reminder> Reminders { get; set; }
         public DbSet<ShoppingList> ShoppingLists { get; set; }
         public DbSet<ShoppingItem> ShoppingItems { get; set; }
+        public DbSet<Routine_ShoppingList> R_SLJoin { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

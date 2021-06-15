@@ -205,6 +205,7 @@
     <Compile Include="Controllers\ReminderController.cs" />
     <Compile Include="Controllers\RoutineController.cs" />
     <Compile Include="Controllers\RoutineItemController.cs" />
+    <Compile Include="Controllers\Routine_ShoppingListController.cs" />
     <Compile Include="Controllers\RRJoinController.cs" />
     <Compile Include="Controllers\ShoppingItemController.cs" />
     <Compile Include="Controllers\ShoppingListController.cs" />

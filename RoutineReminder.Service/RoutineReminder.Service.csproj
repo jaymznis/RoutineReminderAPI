@@ -63,6 +63,7 @@
     <Compile Include="RoutineService.cs" />
     <Compile Include="RoutineItemService.cs" />
     <Compile Include="R_RIService.cs" />
+    <Compile Include="R_SLService.cs" />
     <Compile Include="ShoppingItemService.cs" />
     <Compile Include="ShoppingListService.cs" />
   </ItemGroup>

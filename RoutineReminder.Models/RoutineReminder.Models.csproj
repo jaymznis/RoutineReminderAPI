@@ -76,6 +76,9 @@
     <Compile Include="R_RICreate.cs" />
     <Compile Include="R_RIDetail.cs" />
     <Compile Include="R_RIListItem.cs" />
+    <Compile Include="R_SLCreate.cs" />
+    <Compile Include="R_SLDetail.cs" />
+    <Compile Include="R_SLListItem.cs" />
     <Compile Include="ShoppingItemCreate.cs" />
     <Compile Include="ShoppingItemDetail.cs" />
     <Compile Include="ShoppingItemEdit.cs" />
