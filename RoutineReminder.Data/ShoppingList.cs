@@ -18,6 +18,6 @@ namespace RoutineReminder.Data
 
         public string ShoppingListDesc { get; set; }
 
-        public virtual List<ShoppingItem> ShoppingListItems { get; set; }
+        //public virtual List<ShoppingItem> ShoppingListItems { get; set; }
     }
 }
