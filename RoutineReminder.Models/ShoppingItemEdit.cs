@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace RoutineReminder.Models
 {
-    public class ShoppingItemListItem
+    public class ShoppingItemEdit
     {
         public int ShoppingItemId { get; set; }
         public string ShoppingItemName { get; set; }
+        public string ShoppingItemDesc { get; set; }
+        public string StoreLocation { get; set; }
     }
 }
