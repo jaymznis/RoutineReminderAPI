@@ -65,10 +65,17 @@ namespace RoutineReminder.Service
                         ShoppingItems = entity.ShoppingItems
                         .Select(x => new ShoppingItemListItem()
                         {
-                            ShoppingItemId = x.ShoppingItemId,
+                            ShoppingItemId = x.ShoppingItem.ShoppingItemId,
                             ShoppingItemName = x.ShoppingItem.ShoppingItemName,
                             ShoppingItemDesc = x.ShoppingItem.ShoppingItemDesc,
                             StoreLocation = x.StoreLocation
+                        }
+                        ).ToList(),
+                        Routines = entity.Routines
+                        .Select(y => new RoutineListItem()
+                        {
+                            RoutineId = y.Routine.RoutineId,
+                            RoutineName = y.Routine.RoutineName
                         }
                         ).ToList()
                     };
