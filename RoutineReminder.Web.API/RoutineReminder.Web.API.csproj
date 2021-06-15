@@ -207,6 +207,8 @@
     <Compile Include="Controllers\RoutineItemController.cs" />
     <Compile Include="Controllers\Routine_ShoppingListController.cs" />
     <Compile Include="Controllers\RRJoinController.cs" />
+    <Compile Include="Controllers\ShoppingItemController.cs" />
+    <Compile Include="Controllers\ShoppingListController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

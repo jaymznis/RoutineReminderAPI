@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoutineReminder.Data
+namespace RoutineReminder.Models
 {
-    public class ShoppingItem
+    public class ShoppingItemCreate
     {
-        [Key]
-        public int ShoppingItemId { get; set; }
-
-        [ForeignKey(nameof(ShoppingListId))]
-        public virtual ShoppingList ShoppingList { get; set; }
+        [Required]
         public int ShoppingListId { get; set; }
 
         [Required]
@@ -23,6 +18,5 @@ namespace RoutineReminder.Data
         public string ShoppingItemDesc { get; set; }
 
         public string StoreLocation { get; set; }
-
     }
 }
