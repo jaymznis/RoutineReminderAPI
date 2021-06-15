@@ -40,6 +40,7 @@ namespace RoutineReminder.Data
         public DbSet<Routine_RoutineItem> R_RIJoin { get; set; }
         public DbSet<RoutineItem> RoutineItems { get; set; }
         public DbSet<Reminder> Reminders { get; set; }
+        public DbSet<ShoppingList> ShoppingLists { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
