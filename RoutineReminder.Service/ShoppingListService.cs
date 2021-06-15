@@ -66,8 +66,8 @@ namespace RoutineReminder.Service
                         .Select(x => new ShoppingItemListItem()
                         {
                             ShoppingItemId = x.ShoppingItemId,
-                            ShoppingItemName = x.ShoppingItem.ShoppingItemName,
-                            ShoppingItemDesc = x.ShoppingItem.ShoppingItemDesc,
+                            ShoppingItemName = x.ShoppingItemName,
+                            ShoppingItemDesc = x.ShoppingItemDesc,
                             StoreLocation = x.StoreLocation
                         }
                         ).ToList()

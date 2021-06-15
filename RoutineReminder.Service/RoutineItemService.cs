@@ -47,14 +47,14 @@ namespace RoutineReminder.Service
             }
         }
 
-        public RoutineItemDetail GetRoutineItemById(int id)
+        public RoutineItemDetail GetRoutineItemById(int id) 
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                     .RoutineItems
-                    .Single(e => e.RoutineItemId == id);
+                    .Single(e => e.RoutineItemId == id); //NEED ROUTINE ID, NOT ROUTINE ITEM ID
                 return
                     new RoutineItemDetail
                     {

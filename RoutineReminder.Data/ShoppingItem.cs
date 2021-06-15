@@ -13,12 +13,16 @@ namespace RoutineReminder.Data
         [Key]
         public int ShoppingItemId { get; set; }
 
+        [ForeignKey(nameof(ShoppingListId))]
+        public virtual ShoppingList ShoppingList { get; set; }
+        public int ShoppingListId { get; set; }
+
         [Required]
         public string ShoppingItemName { get; set; }
 
         public string ShoppingItemDesc { get; set; }
 
-        public virtual List<ShoppingList_ShoppingItem> ShoppingLists { get; set; }
+        public string StoreLocation { get; set; }
 
     }
 }

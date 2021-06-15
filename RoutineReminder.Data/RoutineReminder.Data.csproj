@@ -100,6 +100,18 @@
     <Compile Include="Migrations\202106150215331_UpdatedShoppingTables.designer.cs">
       <DependentUpon>202106150215331_UpdatedShoppingTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106151715379_UpdatedShoppingItemTable.cs" />
+    <Compile Include="Migrations\202106151715379_UpdatedShoppingItemTable.designer.cs">
+      <DependentUpon>202106151715379_UpdatedShoppingItemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151755367_UpdateFK.cs" />
+    <Compile Include="Migrations\202106151755367_UpdateFK.designer.cs">
+      <DependentUpon>202106151755367_UpdateFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151809329_UpdateShoppingTablesAgain.cs" />
+    <Compile Include="Migrations\202106151809329_UpdateShoppingTablesAgain.designer.cs">
+      <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reminder.cs" />
@@ -124,6 +136,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106150215331_UpdatedShoppingTables.resx">
       <DependentUpon>202106150215331_UpdatedShoppingTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151715379_UpdatedShoppingItemTable.resx">
+      <DependentUpon>202106151715379_UpdatedShoppingItemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151755367_UpdateFK.resx">
+      <DependentUpon>202106151755367_UpdateFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151809329_UpdateShoppingTablesAgain.resx">
+      <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
