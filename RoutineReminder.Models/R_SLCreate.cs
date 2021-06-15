@@ -5,20 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoutineReminder.Data
+namespace RoutineReminder.Models
 {
-   public class Routine_ShoppingList
+   public class R_SLCreate
     {
-        [Key]
-        public int R_SLId { get; set; }
-
+        [Required]
         public int RoutineId { get; set; }
-
-        public virtual Routine Routine { get; set; }
-
+        [Required]
         public int ShoppingListId { get; set; }
-
-        public virtual ShoppingList ShoppingList { get; set; }
-
     }
 }
