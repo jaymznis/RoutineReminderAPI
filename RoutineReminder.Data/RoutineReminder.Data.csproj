@@ -112,6 +112,10 @@
     <Compile Include="Migrations\202106151809329_UpdateShoppingTablesAgain.designer.cs">
       <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106151832140_PullFromDevelopBranch.cs" />
+    <Compile Include="Migrations\202106151832140_PullFromDevelopBranch.designer.cs">
+      <DependentUpon>202106151832140_PullFromDevelopBranch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reminder.cs" />
@@ -146,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106151809329_UpdateShoppingTablesAgain.resx">
       <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151832140_PullFromDevelopBranch.resx">
+      <DependentUpon>202106151832140_PullFromDevelopBranch.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
