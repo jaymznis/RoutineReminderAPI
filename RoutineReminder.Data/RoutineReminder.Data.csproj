@@ -88,9 +88,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202106071828275_init.cs" />
-    <Compile Include="Migrations\202106071828275_init.designer.cs">
-      <DependentUpon>202106071828275_init.cs</DependentUpon>
+    <Compile Include="Migrations\202106150018033_InitialCreate.cs" />
+    <Compile Include="Migrations\202106150018033_InitialCreate.designer.cs">
+      <DependentUpon>202106150018033_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106150053399_AddedShoppingItem.cs" />
+    <Compile Include="Migrations\202106150053399_AddedShoppingItem.designer.cs">
+      <DependentUpon>202106150053399_AddedShoppingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106150215331_UpdatedShoppingTables.cs" />
+    <Compile Include="Migrations\202106150215331_UpdatedShoppingTables.designer.cs">
+      <DependentUpon>202106150215331_UpdatedShoppingTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151715379_UpdatedShoppingItemTable.cs" />
+    <Compile Include="Migrations\202106151715379_UpdatedShoppingItemTable.designer.cs">
+      <DependentUpon>202106151715379_UpdatedShoppingItemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151755367_UpdateFK.cs" />
+    <Compile Include="Migrations\202106151755367_UpdateFK.designer.cs">
+      <DependentUpon>202106151755367_UpdateFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151809329_UpdateShoppingTablesAgain.cs" />
+    <Compile Include="Migrations\202106151809329_UpdateShoppingTablesAgain.designer.cs">
+      <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106151832140_PullFromDevelopBranch.cs" />
+    <Compile Include="Migrations\202106151832140_PullFromDevelopBranch.designer.cs">
+      <DependentUpon>202106151832140_PullFromDevelopBranch.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,14 +123,36 @@
     <Compile Include="RoutineItem.cs" />
     <Compile Include="RoutineReminderJoin.cs" />
     <Compile Include="Routine_RoutineItem.cs" />
+    <Compile Include="Routine_ShoppingList.cs" />
+    <Compile Include="ShoppingList.cs" />
+    <Compile Include="ShoppingItem.cs" />
+    <Compile Include="ShoppingList_ShoppingItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106071828275_init.resx">
-      <DependentUpon>202106071828275_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106150018033_InitialCreate.resx">
+      <DependentUpon>202106150018033_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106150053399_AddedShoppingItem.resx">
+      <DependentUpon>202106150053399_AddedShoppingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106150215331_UpdatedShoppingTables.resx">
+      <DependentUpon>202106150215331_UpdatedShoppingTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151715379_UpdatedShoppingItemTable.resx">
+      <DependentUpon>202106151715379_UpdatedShoppingItemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151755367_UpdateFK.resx">
+      <DependentUpon>202106151755367_UpdateFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151809329_UpdateShoppingTablesAgain.resx">
+      <DependentUpon>202106151809329_UpdateShoppingTablesAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106151832140_PullFromDevelopBranch.resx">
+      <DependentUpon>202106151832140_PullFromDevelopBranch.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

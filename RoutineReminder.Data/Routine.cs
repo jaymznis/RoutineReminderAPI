@@ -31,6 +31,7 @@ namespace RoutineReminder.Data
         }
         public virtual List<Routine_RoutineItem> RoutineItems { get; set; } = new List<Routine_RoutineItem>();
         public virtual List<RoutineReminderJoin> Reminders { get; set; } = new List<RoutineReminderJoin>();
+        public virtual List<Routine_ShoppingList> ShoppingLists { get; set; } = new List<Routine_ShoppingList>();
 
     }
 }

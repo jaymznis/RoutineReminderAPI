@@ -72,18 +72,26 @@ namespace RoutineReminder.Service
                         EndTime = entity.EndTime,
                         RoutineItems = entity.RoutineItems
                         .Select(x => new RoutineItemListItem()
-                        {RoutineItemId = x.RoutineItemId,
-                        RoutineItemName = x.RoutineItem.RoutineItemName,
-                       RoutineItemTimeframe = x.RoutineItem.RoutineItemTimeframe
+                        {
+                            RoutineItemId = x.RoutineItem.RoutineItemId,
+                            RoutineItemName = x.RoutineItem.RoutineItemName,
+                            RoutineItemTimeframe = x.RoutineItem.RoutineItemTimeframe
                         }
                         ).ToList(),
-                      Reminders = entity.Reminders
+                        Reminders = entity.Reminders
                         .Select(y => new ReminderListItem()
                         {
-                            ReminderId = y.ReminderId,
+                            ReminderId = y.Reminder.ReminderId,
                             ReminderName = y.Reminder.ReminderName
                         }
-                        ).ToList()
+                        ).ToList(),
+                        ShoppingLists = entity.ShoppingLists
+                      .Select(z => new ShoppingListItem()
+                      {
+                          ShoppingListId = z.ShoppingList.ShoppingListId,
+                          ShoppingListName = z.ShoppingList.ShoppingListName
+                      }
+                          ).ToList()
 
                     };
             }

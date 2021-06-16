@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "RoutineReminder.Data.ApplicationDbContext";
         }
 
         protected override void Seed(RoutineReminder.Data.ApplicationDbContext context)
