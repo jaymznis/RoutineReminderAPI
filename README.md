@@ -35,10 +35,33 @@ In this project our team collaborated using Git to create a C# .NET Framework Ap
 
 Link to our Trello Page [HERE](https://trello.com/b/pXmOUogx/routine-reminder)
 
+##Routine Reminder API
+
+This project in a N-teir solution that has multiple layers
+<br>
+<img src="solution.jpg">
+<br>
+#Data: This layer houses our classes that relate to the DB
+<br>
+<img src="data.jpg">
+<br>
+#Models: This layer houses our reusable models for the rest of the layers
+<br>
+<img src="models.jpg">
+<br>
+#Services: This contains most of the working code that allows us to perform our CRUD functions
+<br>
+<img src="service.jpg">
+<br>
+#Web #API: This is where the controllers and API endpoints are
+<br>
+<img src="webapi.jpg">
+<br>
+
 ## Installation
 
 Click on the green code button <br><img src="Code Download Button.jpg"><br> at the top right and select clone or download the zip file. <br> 
-It is easiest to use Visual Studio 2019 Community.  Download VS free [@here](https://visualstudio.microsoft.com/downloads/)<br />
+It is easiest to use Visual Studio 2019 Community.  Download VS free [HERE](https://visualstudio.microsoft.com/downloads/)<br />
 
 ## Contributing
 To contribute to this project, follow the instructions for cloning, then commit your code or changes on a new branch.  Please be sure to include unit test before making a pull request.
