@@ -54,14 +54,21 @@ namespace RoutineReminder.Service
                 var entity =
                     ctx
                     .RoutineItems
-                    .Single(e => e.RoutineItemId == id); //NEED ROUTINE ID, NOT ROUTINE ITEM ID
+                    .Single(e => e.RoutineItemId == id);
                 return
                     new RoutineItemDetail
                     {
                         RoutineItemId = entity.RoutineItemId,
                         RoutineItemName = entity.RoutineItemName,
                         RoutineItemDescription = entity.RoutineItemDescription,
-                        RoutineItemTimeframe = entity.RoutineItemTimeframe
+                        RoutineItemTimeframe = entity.RoutineItemTimeframe,
+                        Routines = entity.Routines
+                        .Select(x => new RoutineListItem()
+                        {
+                            RoutineId = x.RoutineId,
+                            RoutineName = x.Routine.RoutineName
+                        }
+                        ).ToList()
                     };
             }
         }
