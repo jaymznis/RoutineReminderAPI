@@ -35,25 +35,29 @@ In this project our team collaborated using Git to create a C# .NET Framework Ap
 
 Link to our Trello Page [HERE](https://trello.com/b/pXmOUogx/routine-reminder)
 
-##Routine Reminder API
+## Routine Reminder API
 
-This project in a N-teir solution that has multiple layers
+#### This project in a N-teir solution that has multiple layers
 <br>
 <img src="solution.jpg">
 <br>
-#Data: This layer houses our classes that relate to the DB
+## Data: 
+This layer houses our classes that relate to the DB
 <br>
 <img src="data.jpg">
 <br>
-#Models: This layer houses our reusable models for the rest of the layers
+## Models: 
+This layer houses our reusable models for the rest of the layers
 <br>
 <img src="models.jpg">
 <br>
-#Services: This contains most of the working code that allows us to perform our CRUD functions
+## Services: 
+This contains most of the working code that allows us to perform our CRUD functions
 <br>
 <img src="service.jpg">
 <br>
-#Web #API: This is where the controllers and API endpoints are
+## Web API: 
+This is where the controllers and API endpoints are
 <br>
 <img src="webapi.jpg">
 <br>
