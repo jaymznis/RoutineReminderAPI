@@ -42,22 +42,30 @@ Link to our Trello Page [HERE](https://trello.com/b/pXmOUogx/routine-reminder)
 <img src="solution.jpg">
 <br>
 ## Data: 
+<br>
 This layer houses our classes that relate to the DB
+
 <br>
 <img src="data.jpg">
 <br>
-## Models: 
+## Models:
+<br>
 This layer houses our reusable models for the rest of the layers
+
 <br>
 <img src="models.jpg">
 <br>
-## Services: 
+## Services:
+<br>
 This contains most of the working code that allows us to perform our CRUD functions
+
 <br>
 <img src="service.jpg">
 <br>
 ## Web API: 
+<br>
 This is where the controllers and API endpoints are
+
 <br>
 <img src="webapi.jpg">
 <br>
