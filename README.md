@@ -29,7 +29,7 @@ In this project our team collaborated using Git to create a C# .NET Framework Ap
 ## Data: 
 
 
-#### This layer houses our classes that relate to the DB
+#### This layer houses our classes that relate to the Data Base
 
 
 <img src="data.jpg">
